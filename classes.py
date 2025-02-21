@@ -74,3 +74,5 @@ def is_prime(n):
 numbers = [10, 15, 17, 21, 29, 31, 42, 43]
 prime_numbers = list(filter(lambda x: is_prime(x), numbers))
 print("Prime numbers in list:", prime_numbers)
+
+
