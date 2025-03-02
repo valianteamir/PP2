@@ -39,14 +39,15 @@ with open("test.txt", "w+") as f:
 # for i in range(65, 91):
 #         f = open(r"/Users/amirdank/Desktop/PP2/A-Z-files/{}.txt".format(chr(i)), "x") #6
 
-with open("test.txt") as f:
-    with open('copy.txt', "w") as cop:
-        for line in f:
-            cop.write(line) #7
-path = r"/Users/amirdank/Desktop/PP2/copy.txt"
-if not os.path.exists(path=path):
-    print("The path doesn't exist")
-os.remove(path) #8
+# with open("test.txt") as f:
+#     with open('copy.txt', "w") as cop:
+#         for line in f:
+#             cop.write(line) #7
+# path = r"/Users/amirdank/Desktop/PP2/copy.txt"
+# if not os.path.exists(path=path):
+#     print("The path Doesn't exist")
+
+# os.remove(path)
 
 
 
