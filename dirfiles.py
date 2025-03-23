@@ -11,7 +11,6 @@ print([ name for name in os.listdir(path) if os.path.isdir(os.path.join(path, na
 print("Files in '", path, "' :")
 print([ name for name in os.listdir(path) if not os.path.isdir(os.path.join(path, name))]) # 1
 
-import os
 print('Exist:', os.access(r'/Users/amirdank/Desktop/PP2/builtin_functions.py', os.F_OK))
 print('Readable:', os.access(r'/Users/amirdank/Desktop/PP2/builtin_functions.py', os.R_OK))
 print('Writable:', os.access(r'/Users/amirdank/Desktop/PP2/builtin_functions.py', os.W_OK))
@@ -36,20 +35,19 @@ with open("test.txt", "w+") as f:
     for i in l:
         f.write(str(i)) #5
         
-# for i in range(65, 91):
-#         f = open(r"/Users/amirdank/Desktop/PP2/A-Z-files/{}.txt".format(chr(i)), "x") #6
+for i in range(65, 91):
+        f = open(r"/Users/amirdank/Desktop/PP2/A-Z-files/{}.txt".format(chr(i)), "x") #6
 
-# with open("test.txt") as f:
-#     with open('copy.txt', "w") as cop:
-#         for line in f:
-#             cop.write(line) #7
-# path = r"/Users/amirdank/Desktop/PP2/copy.txt"
-# if not os.path.exists(path=path):
-#     print("The path Doesn't exist")
-
-# os.remove(path)
-
-
-
+with open("test.txt") as f:
+    with open('copy.txt', "w") as cop:
+        for line in f:
+            cop.write(line) #7
+path = r"/Users/amirdank/Desktop/PP2/copy.txt"
+if not os.path.exists(path=path):
+    print("The path Doesn't exist")
+else:
+    os.remove(path) #8
+    
 
 
+    
